@@ -1,23 +1,23 @@
-console.log('And we\'re off...');               // Indicates script is running
+console.log('And we\'re off...');
 var $form, width, height, area;
 $form = $('#calculator');
 
-$('form input[type="text"]').on('blur', function() { // When input loses focus
-  console.log('You entered ', this.value );          // Write value to console
+$('form input[type="text"]').on('blur', function() {
+  console.log('You entered ', this.value );
 });
 
-$('#calculator').on('submit', function(e) {     // When the user clicks submit
-  e.preventDefault();                           // Prevent the form submitting
-  console.log('Clicked submit...');             // Indicate button was clicked
+$('#calculator').on('submit', function(e) {
+  e.preventDefault();
+  console.log('Clicked submit...');
 
   width = $('#width').val();
-  console.log('Width ' + width);                // Write width to console
+  console.log('Width ' + width);
 
   height = $('#height').val();
-  console.log('Height ', height);               // Write height to console
+  console.log('Height ', height);
 
   area = width * height;
-  console.log(area);                            // Write area to console
+  console.log(area);
 
   $form.append('<p>' + area + '</p>')
 });
