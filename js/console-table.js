@@ -11,7 +11,7 @@ var contacts = {
     "Tel": "+1 (0) 555 2104",
     "Country": "USA"
   }
-}
+};
 
 console.table(contacts);
 
